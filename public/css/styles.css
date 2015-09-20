@@ -1,7 +1,7 @@
 /* custom template */
 html, body {
    height: 100%;
-   font-family:verdana,arial,sans-serif;
+   font-family:'Montserrat', arial, sans-serif;
    color:#555555;
 }
 
@@ -73,7 +73,7 @@ hr {
 
 .navbar-blue {
     border-width:0;
-	background-color:#3B5999;
+	background-color:#c7ac7f;
     color:#ffffff;
     font-family:arial,sans-serif;
     top:0;
@@ -82,14 +82,14 @@ hr {
 }
 
 .navbar-blue li > a,.navbar-toggle  {
-   color:#efefef;
+   color:white;
 }
 
-.navbar-blue .dropdown-menu li a {color:#2A4888;}
+.navbar-blue .dropdown-menu li a {color:#b7955c;}
 .navbar-blue .dropdown-menu li > a {padding-left:30px;}
 
 .navbar-blue li>a:hover, .navbar-blue li>a:focus, .navbar-blue .open, .navbar-blue .open>a, .navbar-blue .open>a:hover, .navbar-blue .open>a:focus {
-   background-color:#2A4888;
+   background-color:#b7955c;
    color:#fff;
 }
 
@@ -123,7 +123,7 @@ hr {
   display:block;
   padding:3px;
   background-color:#fff;
-  color:#3B5999;
+  color:#b7955c;
   height:28px;
   width:28px;
   margin:9px;
@@ -161,8 +161,9 @@ h1,h2,h3 {
 }
 
 .btn-primary,.label-primary,.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus  {
-	background-color:#3B5999;
+	background-color:#b7955c;
     color:#fffffe;
+    border-color: #b7955c;
 }
 .btn-default {
     color:#666666;
@@ -178,11 +179,11 @@ h1,h2,h3 {
 }
   
 .badge{
-   color:#3B5999;
+   color:#b7955c;
    background-color:#fff;
 }
 .badge:hover, .badge-inverse{
-   background-color:#3B5999;
+   background-color:#b7955c;
    color:#fff;
 }
     
@@ -248,7 +249,7 @@ small.text-muted {
   }
 
   .navbar-blue {
-	background-color:#3B5999;
+	background-color:#b7955c;
     top:0;
     width:100%;
     position:relative;
@@ -290,7 +291,7 @@ small.text-muted {
     display:block;
     padding:3px;
     background-image: "/media/logo1.svg";
-    color:#3B5999;
+    color:#b7955c;
     height:28px;
     width:28px;
     margin:9px;
