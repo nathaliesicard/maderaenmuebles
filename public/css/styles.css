@@ -149,7 +149,7 @@ hr {
 /* bootstrap overrides */
 
 h1,h2,h3 {
-   font-weight:800;
+   font-weight:500;
 }
 
 .navbar-toggle, .close {
@@ -303,3 +303,9 @@ small.text-muted {
     text-shadow:0 0 1px;
     border-radius:2px;
 }
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
