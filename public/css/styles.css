@@ -287,23 +287,6 @@ small.text-muted {
   }
 }
 
-.logo-image {
-    display:block;
-    padding:3px;
-    background-image: "/media/logo1.svg";
-    color:#b7955c;
-    height:28px;
-    width:28px;
-    margin:9px;
-    margin-right:2px;
-    margin-left:15px;
-    font-size:20px;
-    font-weight:700;
-    text-align:center;
-    text-decoration:none;
-    text-shadow:0 0 1px;
-    border-radius:2px;
-}
 
 h3 {
     font-family: 'Montserrat', sans-serif;
