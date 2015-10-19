@@ -1,270 +1,337 @@
 {% extends "views/main.html" %}
 
 {% block content %}
-<div class="wrapper">
-    <div class="box">
-        <div class="row row-offcanvas row-offcanvas-left">
+    <!-- Full Page Image Background Carousel Header -->
+        <header id="myCarousel" class="carousel slide">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
 
+            <!-- Wrapper for Slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <!-- Set the first background image using inline CSS below. -->
+                    <div class="fill" style="background-image:url('media/pergola1.jpg');"></div>
+                    <div class="carousel-caption">
 
-            <!-- sidebar -->
-            <div class="column col-sm-2 col-xs-1 sidebar-offcanvas" id="sidebar">
-
-              	<ul class="nav">
-          			<li><a href="#" data-toggle="offcanvas" class="visible-xs text-center"><i class="glyphicon glyphicon-chevron-right"></i></a></li>
-            	</ul>
-
-                <ul class="nav hidden-xs" id="lg-menu">
-                    <li class="active"><a href="cocinas.html"><i class="fa fa-tag"></i> Cocinas</a></li>
-                    <li><a href="closets.html"><i class="fa fa-tag"></i> Closets</a></li>
-                    <li><a href="pergolas.html"><i class="fa fa-tag"></i>Pérgolas y Decks</a></li>
-                    <li><a href="mobiliario.html"><i class="fa fa-tag"></i> Mobiliario</a></li>
-                    <li><a href="mantenimiento.html"><i class="fa fa-tag"></i></i> Mantenimiento</a></li>
-                    <br>
-                    <li><a href="contacto.html"><i class="fa fa-phone-square"></i> Contacto</a></li>
-                </ul>
-                <ul class="list-unstyled hidden-xs" id="sidebar-footer">
-                    <li>
-                      <a href="/"><h3>Madera en Muebles</h3> <i class="fa fa-thumbs-o-up"></i> A su medida</a>
-
-                    </li>
-                </ul>
-
-              	<!-- tiny only nav-->
-              <ul class="nav visible-xs" id="xs-menu">
-                  	<li><a href="cocinas.html" class="text-center"><i class="fa fa-tag"></i></a></li>
-                    <li><a href="closets.html" class="text-center"><i class="fa fa-tag"></i></a></li>
-                  	<li><a href="pergolas.html" class="text-center"><i class="fa fa-tag"></i></a></li>
-                    <li><a href="mobiliario.html" class="text-center"><i class="fa fa-tag"></i></a></li>
-                  <li><a href="mantenimiento.html" class="text-center"><i class="fa fa-tag"></i></a></li>
-                  <br>
-                  <li><a href="contacto.html" class="text-center"><i class="fa fa-phone-square"></i></a></li>
-
-
-              </ul>
-
-            </div>
-            <!-- /sidebar -->
-
-            <!-- main right col -->
-            <div class="column col-sm-10 col-xs-11" id="main">
-
-                <!-- top nav -->
-              	<div class="navbar navbar-blue navbar-static-top">
-                    <div class="navbar-header">
-                      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle</span>
-                        <span class="icon-bar"></span>
-          				<span class="icon-bar"></span>
-          				<span class="icon-bar"></span>
-                      </button>
-                        <div style="margin-left: 10px;">
-                        <a href="#page-top"><img src="media/logo2.svg" height="45px"></a>
-                        </div>
-
-                  	</div>
-                  	<nav class="collapse navbar-collapse" role="navigation">
-
-                    <ul class="nav navbar-nav navbar-right">
-                        <li> <a href="contacto.html"><i class="fa fa-phone"></i> Llámanos: (55) 26 02 09 63 y (55) 58 61 21 71</a></li>
-                      <li>
-                        <a href="/"><i class="fa fa-home"></i> Inicio</a>
-                      </li>
-
-                      <li>
-                        <a href="nosotros.html"><i class="fa fa-industry"></i> Nosotros</a>
-                      </li>
-                        <li>
-                            <a href="contacto.html"><span class="badge"><i class="fa fa-envelope-o"></i> Solicita tu cotización</span></a>
-                        </li>
-                    </ul>
-
-                  	</nav>
+                        <h2 class="cover">Hacemos realidad su proyecto</h2>
+                    </div>
                 </div>
-                <!-- /top nav -->
+                <div class="item">
+                    <!-- Set the second background image using inline CSS below. -->
+                    <div class="fill" style="background-image:url('media/cocina4.jpg');"></div>
+                    <div class="carousel-caption">
+                        <h2 class="cover">Construimos a la medida y sobre diseño</h2>
+                    </div>
+                </div>
+                <div class="item">
+                    <!-- Set the third background image using inline CSS below. -->
+                    <div class="fill" style="background-image:url('media/closet2.jpg');"></div>
+                    <div class="carousel-caption">
+                        <h2 class="cover">Excelente calidad de materiales y acabados para su hogar</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+
+        </header>
 
 
 
-                <!-- Half Page Image Background Carousel Header -->
-                <header id="myCarousel" class="carousel slide" style="">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                    </ol>
 
-                    <!-- Wrapper for Slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <!-- Set the first background image using inline CSS below. -->
-                            <div class="fill" style="background-image:url('media/pergola1.jpg');"></div>
-                            <div class="carousel-caption">
-                                <h2>Hacemos realidad su proyecto</h2>
+<section id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Nuestros productos</h2>
+                <hr class="primary">
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <h3 class="orange-text text-center">Cocinas</h3>
+                <a href="entrada.html" class="portfolio-box">
+                    <img src="media/cocina1.jpg" class="img-responsive" alt="Cocinas de madera sobre diseño">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Cocinas de Madera
                             </div>
-                        </div>
-                        <div class="item">
-                            <!-- Set the second background image using inline CSS below. -->
-                            <div class="fill" style="background-image:url('media/cocina4.jpg');"></div>
-                            <div class="carousel-caption">
-                                <h2>Construimos a la medida y sobre diseño</h2>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <!-- Set the third background image using inline CSS below. -->
-                            <div class="fill" style="background-image:url('media/closet2.jpg');"></div>
-                            <div class="carousel-caption">
-                                <h2>Excelente calidad de materiales y acabados para su hogar</h2>
+                            <div class="project-name">
+                                Sobre diseño y a su medida
                             </div>
                         </div>
                     </div>
-
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                        <span class="icon-prev"></span>
-                    </a>
-                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                        <span class="icon-next"></span>
-                    </a>
-
-                </header>
-                <section>
-                    <div class="padding">
-                        <div class="row">
-                            <div class="full col-sm-9">
-                                <h2 class="uppercase text-center">Nuestros Productos a su Medida</h2>
-                                <div class="row">
-                                    <div class="col-sm-4 text-center">
-                                        <h3 class="text-center">Cocinas</h3>
-                                        <a href=# class="portfolio-box">
-                                            <img src="media/cocina1.jpg" class="img-responsive rounded-corners" alt="Cocina de madera">
-                                            <div class="portfolio-box-caption rounded-corners">
-                                                <div class="portfolio-box-caption-content">
-                                                    <div class="project-category text-faded">
-                                                        Cocinas
-                                                    </div>
-                                                    <div class="project-name">
-                                                        Sobre diseño y a la medida
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-4 text-center">
-                                        <h3 class="text-center">Closets</h3>
-                                        <a href=# class="portfolio-box">
-                                            <img src="media/closet1_640x480.jpg" class="img-responsive rounded-corners" alt="Closet de madera">
-                                            <div class="portfolio-box-caption rounded-corners">
-                                                <div class="portfolio-box-caption-content">
-                                                    <div class="project-category text-faded">
-                                                        Closets
-                                                    </div>
-                                                    <div class="project-name">
-                                                        Sobre diseño y a la medida
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-4 text-center">
-                                        <h3 class="text-center">Pérgolas y Decks</h3>
-                                        <a href=# class="portfolio-box">
-                                            <img src="media/pergola2_640x480.jpg" class="img-responsive rounded-corners" alt="Pergola de madera">
-                                            <div class="portfolio-box-caption rounded-corners">
-                                                <div class="portfolio-box-caption-content">
-                                                    <div class="project-category text-faded">
-                                                        Pérgolas y Decks
-                                                    </div>
-                                                    <div class="project-name">
-                                                        Sobre diseño y a la medida
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div><br>
-                                <div class="row">
-                                    <div class="col-sm-4 col-sm-offset-2 text-center">
-                                        <h3 class="text-center">Mobiliario</h3>
-                                        <a href=# class="portfolio-box">
-                                            <img src="media/mobiliario1_640x480.jpg" class="img-responsive rounded-corners" alt="Muebles de madera">
-                                            <div class="portfolio-box-caption rounded-corners">
-                                                <div class="portfolio-box-caption-content">
-                                                    <div class="project-category text-faded">
-                                                        Mobiliario
-                                                    </div>
-                                                    <div class="project-name">
-                                                        Sobre diseño y a la medida
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-4 text-center">
-                                        <h3 class="text-center">Mantenimiento</h3>
-                                        <a href=# class="portfolio-box">
-                                            <img src="media/mantemiento_640x480.jpg" class="img-responsive rounded-corners" alt="Mantenimiento">
-                                            <div class="portfolio-box-caption rounded-corners">
-                                                <div class="portfolio-box-caption-content">
-                                                    <div class="project-category text-faded">
-                                                        Mantenimiento
-                                                    </div>
-                                                    <div class="project-name">
-                                                        De primera calidad para sus muebles de madera
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div></div>
-
-
-                    </div></div></div>
-
-                    <hr>
-                    <div class="row"><h2 class="uppercase text-center">Maderas Finas</h2>
-                        <p class="text-center">Manejamos un extenso surtido de maderas finas tanto nacionales como de importación.</p>
-
-                        <div class="row">
-<div class="col-sm-2"><h4 class="text-center">Pino Primera</h4><img src="/media/madera/pino.jpg" class="rounded-corners img-responsive" alt="Madera pino primera"></div>
-                            <div class="col-sm-2"><h4 class="text-center">Banak</h4><img src="/media/madera/banak.jpg" class="rounded-corners img-responsive" alt="Madera Banak"></div>
-                            <div class="col-sm-2"><h4 class="text-center">Caoba</h4><img src="/media/madera/caoba.jpg" class="rounded-corners img-responsive" alt="Madera Caoba"></div>
-                            <div class="col-sm-2"><h4 class="text-center">Cedro</h4><img src="/media/madera/cedro.jpg" class="rounded-corners img-responsive" alt="Madera cedro"></div>
-                            <div class="col-sm-2"><h4 class="text-center">Encino</h4><img src="/media/madera/encino.jpg" class="rounded-corners img-responsive" alt="Madera encino"></div>
-                            <div class="col-sm-2"><h4 class="text-center">Cerezo</h4><img src="/media/madera/cerezo.jpg" class="rounded-corners img-responsive" alt="Madera cerezo"></div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <h3 class="orange-text text-center">Closets</h3>
+                <a href="intercomunicacion.html" class="portfolio-box">
+                    <img src="media/closet1_640x480.jpg" class="img-responsive" alt="Closets de madera sobre diseño">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Closets
+                            </div>
+                            <div class="project-name">
+                                Sobre diseño y a su medida
+                            </div>
+                        </div>
                     </div>
-                        <br>
+                </a>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <h3 class="orange-text text-center">Pérgolas y Decks</h3>
+
+                <a href="cocina.html" class="portfolio-box">
+                    <img src="media/pergola2_640x480.jpg" class="img-responsive" alt="Pérgolas y decks de madera sobre diseño">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Pérgolas y Decks
+                            </div>
+                            <div class="project-name">
+                                Sobre diseño y a su medida
+                            </div>
+                        </div>
                     </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <h3 class="orange-text text-center">Muebles</h3>
 
+                <a href="vitrales.html" class="portfolio-box">
+                    <img src="media/mobiliario1_640x480.jpg" class="img-responsive" alt="Muebles de madera sobre diseño">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Muebles de Madera
+                            </div>
+                            <div class="project-name">
+                                Sobre diseño y a su medida
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
 
-                </section>
-
-<section class="bg-white">
-<div class="row">
-
-   <div class="col-sm-10 col-sm-offset-1">
-       <br>
-       <h2 class="uppercase text-center">Muebles en madera sobre diseño y a la medida de su hogar</h2>
-       <p>Somos una empresa con más de 20 años en el mercado fabricando puertas y mobiliario de madera en diferentes especies.</p>
-
-    <p> Nuestra  alta calidad y dedicación nos posiciona como una de las pocas plantas que desarrollan  productos de primera clase.</p>
-
-    <p>  Empleamos insumos tanto de importación como nacionales con respaldo de abasto y de preservación de bosques. Utilizamos maderas tratadas que aseguran durabilidad de nuestros productos.</p>
-
-
-    <p> Estamos a sus órdenes para realizar su proyecto en acuerdo a sus necesidades de diseño, asegurando la calidad que usted merece y a un precio competitivo.  </p></div></div>
-    <br>
+        </div>
+    </div>
 </section>
 
-                      <section>
-                         <div class="col-sm-10 col-sm-offset-1">
-<h2 class="uppercase text-center">¡Estamos a sus órdenes!</h2>
-                             <p class="text-center">Llámenos para conocer su proyecto y orientarle sobre sus necesidades. Realizamos cotizaciones sin compromiso.</p>
-<div class="text-center">
-                             <a class="btn btn-primary" href="contacto.html"><i class="fa fa-phone"></i> Contacto</a></div>
+<aside class="bg-dark">
+    <div class="container text-center">
+        <div class="call-to-action">
+            <h2>Descarga el catálogo en PDF para consultarlo desde tu computadora.</h2>
+            <a href="#" class="btn btn-default btn-xl wow tada">Descarga Catálogo</a>
+        </div>
+    </div>
+</aside>
 
-<br>
-                             <br>
-</div></section>
 
+                <div class="container-fluid text-center">
+
+                    <div class="row no-gutter">
+                        <div class="col-lg-12 text-center"><br><br>
+                            <h2 class="section-heading">Tipos de Madera</h2>
+                            <hr class="primary">
+                            <p class="text-center">Manejamos un extenso surtido de maderas finas tanto nacionales como de importación.</p>
+                        </div>
+                        <div class="col-lg-2 col-sm-3">
+                            <a href=# class="portfolio-box">
+                                <img src="media/madera/pino.jpg" class="img-responsive" alt="Madera solida">
+                                <div class="portfolio-box-caption">
+                                    <div class="portfolio-box-caption-content">
+                                        <div class="project-category text-faded">
+                                            Nacional
+                                        </div>
+                                        <div class="project-name">
+                                            Pino de Primera
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-sm-3">
+                            <a href=# class="portfolio-box">
+                                <img src="media/madera/banak.jpg" class="img-responsive" alt="Madera solida">
+                                <div class="portfolio-box-caption">
+                                    <div class="portfolio-box-caption-content">
+                                        <div class="project-category text-faded">
+                                            Nacional
+                                        </div>
+                                        <div class="project-name">
+                                            Banak
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-sm-3">
+                            <a href=# class="portfolio-box">
+                                <img src="media/madera/caoba.jpg" class="img-responsive" alt="Madera solida">
+                                <div class="portfolio-box-caption">
+                                    <div class="portfolio-box-caption-content">
+                                        <div class="project-category text-faded">
+                                            Nacional
+                                        </div>
+                                        <div class="project-name">
+                                            Caoba
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-sm-3">
+                            <a href="vitrales.html" class="portfolio-box">
+                                <img src="media/madera/cerezo.jpg" class="img-responsive" alt="Madera Solida">
+                                <div class="portfolio-box-caption">
+                                    <div class="portfolio-box-caption-content">
+                                        <div class="project-category text-faded">
+                                            Importación
+                                        </div>
+                                        <div class="project-name">
+                                            Cerezo
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-sm-3">
+                            <a href="#" class="portfolio-box">
+                                <img src="media/madera/encino.jpg" class="img-responsive" alt="Madera Solida">
+                                <div class="portfolio-box-caption">
+                                    <div class="portfolio-box-caption-content">
+                                        <div class="project-category text-faded">
+                                            Importación
+                                        </div>
+                                        <div class="project-name">
+                                            Encino
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-sm-3">
+                            <a href="#" class="portfolio-box">
+                                <img src="media/madera/cedro.jpg" class="img-responsive" alt="Madera Solida">
+                                <div class="portfolio-box-caption">
+                                    <div class="portfolio-box-caption-content">
+                                        <div class="project-category text-faded">
+                                            Importación
+                                        </div>
+                                        <div class="project-name">
+                                            Cedro
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+<section id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Nuestra promesa de servicio</h2>
+                <hr class="primary">
             </div>
-      
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
+                    <h3>Calidad de Primera</h3>
+                    <p class="text-muted">Nuestros productos son elaborados con excelentes materias primas y bajo estrictos procesos que aseguran la calidad del producto final.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-clock-o wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                    <h3>Entrega a Tiempo</h3>
+                    <p class="text-muted">Entregamos su proyecto en el tiempo convenido.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-pencil-square-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                    <h3>Diseño y Vanguardia</h3>
+                    <p class="text-muted">Constantemente renovamos nuestro catálogo para ofrecerle variedad y estilos actuales. También trabajamos sobre su diseño.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                    <h3>Atención Personalizada</h3>
+                    <p class="text-muted">Atendemos específicamente sus necesidades y le brindamos asesoría para que su proyecto sea lo que usted soñó.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-primary" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">¡Estamos a sus órdenes!</h2>
+                <hr class="light">
+                <p class="text-faded">Somos una empresa con más de 20 años en el mercado fabricando puertas y mobiliario de madera en diferentes especies.</p>
+
+                <p class="text-faded"> Nuestra  alta calidad y dedicación nos posiciona como una de las pocas plantas que desarrollan  productos de primera clase.</p>
+
+                <p class="text-faded">  Empleamos insumos tanto de importación como nacionales con respaldo de abasto y de preservación de bosques. Utilizamos maderas tratadas que aseguran durabilidad de nuestros productos.</p>
+
+
+                <p class="text-faded"> Estamos a sus órdenes para realizar su proyecto en acuerdo a sus necesidades de diseño, asegurando la calidad que usted merece y a un precio competitivo.  </p>
+                <a href="#" class="btn btn-default btn-xl">Conocer más</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">Contacto</h2>
+                <hr class="primary">
+                <p>Llámenos para conocer su proyecto y orientarle sobre sus necesidades. Realizamos cotizaciones sin compromiso.</p>
+            </div>
+            <div class="col-lg-4 col-lg-offset-2 text-center">
+                <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                <p>Fijo: (55) 26 02 09 63</p>
+                <p>Fijo: (55) 58 61 21 71</p>
+                    <p>Celular: 55 14 73 23 40</p>
+            </div>
+            <div class="col-lg-4 text-center">
+                <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                <p><a href="mailto:your-email@your-domain.com">contacto@maderaenmuebles.com</a></p>
+            </div>
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <i class="fa fa-location-arrow fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                <p><a href="https://www.google.com.mx/maps/place/Industria+y+Servicios+Madereros+Sg+S.A.+de+C.V./@19.6277927,-99.2465669,17z/data=!4m7!1m4!3m3!1s0x85d21e9aa1ba85ff:0x1673df7b52bbf677!2sPel%C3%ADcanos+65,+Lago+de+Guadalupe,+54760+Cuautitl%C3%A1n+Izcalli,+M%C3%A9x.!3b1!3m1!1s0x0000000000000000:0xa767049d3859529a?hl=en">Pelícanos No. 65 Colonia Lago de Guadalupe CP 54760 Cuautitlan Izcalli, Estado de México</a></p><p><div class="google-maps"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3757.9884230214943!2d-99.24656689999999!3d19.627792699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xa767049d3859529a!2sIndustria+y+Servicios+Madereros+Sg+S.A.+de+C.V.!5e0!3m2!1sen!2smx!4v1441246196403" width="350" height="250" frameborder="0" style="border:0" allowfullscreen></iframe></div></p>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+('.carousel').carousel({
+  interval: 3000
+})
+</script>
+
 {% endblock %}
