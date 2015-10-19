@@ -11,6 +11,7 @@ var app = koa();
 
 app.use(logger());
 app.use(serve('public'));
+
 app.use(views('views', {
     map: {
         html: 'nunjucks'
