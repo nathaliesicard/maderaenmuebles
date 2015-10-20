@@ -94,6 +94,5 @@ router.post('/contacto', bodyParser(), function*() {
 
     yield sendEmail('A contact us was submitted with: ' + JSON.stringify(this.request.body));
 
-
-    this.body = 'El mensaje ha sido enviado. Gracias!';
+    this.redirect('/enviado');
 });
