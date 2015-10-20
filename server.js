@@ -3,6 +3,7 @@ var logger = require('koa-logger');
 var serve = require('koa-static');
 var Router = require('koa-router');
 var views = require('koa-views');
+var bodyParser = require('koa-bodyparser');
 
 var nunjucks = require('nunjucks');
 var nodemailer = require('nodemailer');
@@ -88,7 +89,7 @@ function sendEmail(text) {
     });
 }
 
-router.post('/contact', function*() {
+router.post('/contacto', bodyParser(), function*() {
     console.log('Contact us form was run!', this.request.body);
 
     yield sendEmail('A contact us was submitted with: ' + JSON.stringify(this.request.body));

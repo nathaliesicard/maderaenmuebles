@@ -38,25 +38,25 @@
            </div>
            <div class="row">
                <div class="col-lg-12">
-                   <form name="sentMessage" id="contactForm" novalidate>
+                   <form name="sentMessage" method="post" id="contactForm" novalidate>
                        <div class="row">
                            <div class="col-md-6">
                                <div class="form-group">
-                                   <input type="text" class="form-control" placeholder="Nombre *" id="name" required data-validation-required-message="Por favor escriba su nombre.">
+                                   <input type="text" class="form-control" name="nombre" placeholder="Nombre *" id="name" required data-validation-required-message="Por favor escriba su nombre.">
                                    <p class="help-block text-danger"></p>
                                </div>
                                <div class="form-group">
-                                   <input type="email" class="form-control" placeholder="Correo Electrónico *" id="email" required data-validation-required-message="Por favor escriba su correo electrónico.">
+                                   <input type="email" class="form-control" name="email" placeholder="Correo Electrónico *" id="email" required data-validation-required-message="Por favor escriba su correo electrónico.">
                                    <p class="help-block text-danger"></p>
                                </div>
                                <div class="form-group">
-                                   <input type="tel" class="form-control" placeholder="Teléfono" id="phone">
+                                   <input type="tel" class="form-control" name="telefono" placeholder="Teléfono" id="phone">
                                    <p class="help-block text-danger"></p>
                                </div>
                            </div>
                            <div class="col-md-6">
                                <div class="form-group">
-                                   <textarea class="form-control" placeholder="Mensaje *" id="message" required data-validation-required-message="Por favor escriba un mensaje."></textarea>
+                                   <textarea class="form-control" name="mensaje" placeholder="Mensaje *" id="message" required data-validation-required-message="Por favor escriba un mensaje."></textarea>
                                    <p class="help-block text-danger"></p>
                                </div>
                            </div>
