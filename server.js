@@ -31,7 +31,7 @@ var paths = {
    '/closets': 'closets',
    '/muebles': 'muebles',
    '/nosotros': 'nosotros',
-   '/contacto': 'contacto'
+   '/contacto': 'contacto',
    '/enviado': 'enviado'
 };
 
