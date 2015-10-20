@@ -71,23 +71,23 @@
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-right">
                     <li>
-                          <a class="page-scroll" href="#services">Cocinas</a>
+                          <a class="page-scroll" href="/cocinas">Cocinas</a>
                       </li>
                       <li>
-                          <a class="page-scroll" href="#about">Closets</a>
+                          <a class="page-scroll" href="/closets">Closets</a>
                       </li>
                       <li>
-                          <a class="page-scroll" href="#about">Pérgolas</a>
+                          <a class="page-scroll" href="/pergolas">Pérgolas</a>
                       </li>
                       <li>
-                          <a class="page-scroll" href="#about">Muebles</a>
+                          <a class="page-scroll" href="/muebles">Muebles</a>
                       </li>
 
                       <li>
-                          <a class="page-scroll" href="#about">Nosotros</a>
+                          <a class="page-scroll" href="/nosotros">Nosotros</a>
                       </li>
                       <li>
-                          <a class="page-scroll" href="#contact">Contacto</a>
+                          <a class="page-scroll" href="/contacto">Contacto</a>
                       </li>
                   </ul>
               </div>
@@ -105,7 +105,8 @@
               <div class="col-md-4 text-center">
 <br>
                   <p>
-                      <a href="www.maderaenmuebles.com" class="pull-right">MaderaEnMuebles.com ©Copyright 2015.</a>
+                  ©Copyright 2015.
+                      <a href="/" class="pull-right">MaderaEnMuebles.com</a>
                   </p>
 
               </div>
@@ -137,6 +138,8 @@
 
 
 
+
+
   <!-- jQuery -->
   <script src="js/jquery.js"></script>
 
@@ -148,8 +151,12 @@
   <script src="js/jquery.fittext.js"></script>
   <script src="js/wow.min.js"></script>
 
+  {% block scripts %}
+
   <!-- Custom Theme JavaScript -->
   <script src="js/creative.js"></script>
+
+  {% endblock %}
 
 </body>
 </html>

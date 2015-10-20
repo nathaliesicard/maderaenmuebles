@@ -24,8 +24,12 @@ var router = new Router();
 
 var paths = {
    '/': 'index',
-   '/productos': 'products',
-   '/contacto': 'contact'
+   '/cocinas': 'cocinas',
+   '/pergolas': 'pergolas',
+   '/closets': 'closets',
+   '/muebles': 'muebles',
+   '/nosotros': 'nosotros',
+   '/contacto': 'contacto'
 };
 
 Object.keys(paths).forEach(function(path) {
