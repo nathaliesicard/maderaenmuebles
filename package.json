@@ -19,7 +19,8 @@
     "koa-views": "^3.1.0",
     "nodemailer": "^1.8.0",
     "nodemailer-smtp-transport": "^1.0.3",
-    "nunjucks": "^2.0.0"
+    "nunjucks": "^2.0.0",
+    "pgwslideshow": "^2.0.0"
   },
   "engines": {
     "node": "4.0.x"
