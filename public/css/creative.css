@@ -57,7 +57,7 @@ p {
 
 .bg-dark {
     color: #fff;
-    background-color: #9f8170;
+    background-color: #222;
 }
 
 .text-faded {
@@ -733,4 +733,8 @@ section#contact:-ms-input-placeholder {
 }
 section#contact .text-danger {
     color: #e74c3c
+}
+
+.roundy {
+  border-radius: 25px;
 }
