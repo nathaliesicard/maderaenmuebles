@@ -32,7 +32,8 @@ var paths = {
    '/muebles': 'muebles',
    '/nosotros': 'nosotros',
    '/contacto': 'contacto',
-   '/enviado': 'enviado'
+   '/enviado': 'enviado',
+   '/products': 'products'
 };
 
 Object.keys(paths).forEach(function(path) {
