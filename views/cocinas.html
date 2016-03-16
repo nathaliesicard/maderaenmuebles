@@ -2,7 +2,7 @@
 
 {% block css %}
    <!-- Custom CSS -->
-   <link rel="stylesheet" href="pgwslideshow/pgwslideshow.min.css" type="text/css">
+   <link rel="stylesheet" href="/fotorama/fotorama.css" type="text/css">
 {% endblock %}
 
 {% block content %}
@@ -17,42 +17,39 @@
       <br>
       <div class="container">
           <div class="row">
-<ul class="pgwSlideshow">
-    <li><img src="media/web/kitchen1.jpg" alt="" data-description=""></li>
-    <li><img src="media/web/kitchen2.jpg" alt=""></li>
-    <li><img src="media/web/kitchen4.jpg" alt="" data-large-src=""></li>
-    <li><img src="media/web/kitchen5.jpg" alt=""></li>
-    <li><img src="media/web/kitchen6.jpg" alt=""></li>
-    <li><img src="media/web/kitchen7.jpg" alt=""></li>
-    <li><img src="media/web/kitchen8.jpg" alt=""></li>
-    <li><img src="media/web/kitchen9.jpg" alt=""></li>
-    <li><img src="media/web/kitchen10.jpg" alt=""></li>
-    <li><img src="media/web/kitchen11.jpg" alt=""></li>
-    <li><img src="media/web/kitchen12.jpg" alt=""></li>
-    <li><img src="media/web/kitchen13.jpg" alt=""></li>
-    <li><img src="media/web/kitchen14.jpg" alt=""></li>
-    <li><img src="media/web/kitchen15.jpg" alt=""></li>
-    <li><img src="media/web/kitchen3.jpg" alt=""></li>
-      <li><img src="media/web/cocina16.jpg" alt=""></li>
-      <li><img src="media/web/cocina17.jpg" alt=""></li>
-      <li><img src="media/web/cocina18.jpg" alt=""></li>
-      <li><img src="media/web/cocina19.jpg" alt=""></li>
-</ul>
-</div>
-</div>
+            <div class="fotorama"
+                 data-nav="thumbs"
+                 data-height="90%"
+                 data-ratio="800/600"
+                 data-transition="crossfade"
+                 data-allowfullscreen="true"
+            >
+                <img src="media/web/kitchen1.jpg" alt="" data-description="">
+                <img src="media/web/kitchen2.jpg" alt="">
+                <img src="media/web/kitchen4.jpg" alt="" data-large-src="">
+                <img src="media/web/kitchen5.jpg" alt="">
+                <img src="media/web/kitchen6.jpg" alt="">
+                <img src="media/web/kitchen7.jpg" alt="">
+                <img src="media/web/kitchen8.jpg" alt="">
+                <img src="media/web/kitchen9.jpg" alt="">
+                <img src="media/web/kitchen10.jpg" alt="">
+                <img src="media/web/kitchen11.jpg" alt="">
+                <img src="media/web/kitchen12.jpg" alt="">
+                <img src="media/web/kitchen13.jpg" alt="">
+                <img src="media/web/kitchen14.jpg" alt="">
+                <img src="media/web/kitchen15.jpg" alt="">
+                <img src="media/web/kitchen3.jpg" alt="">
+                  <img src="media/web/cocina16.jpg" alt="">
+                  <img src="media/web/cocina17.jpg" alt="">
+                  <img src="media/web/cocina18.jpg" alt="">
+                  <img src="media/web/cocina19.jpg" alt="">
+            </div>
+          </div>
+      </div>
 
 </section>
 {% endblock %}
 {% block scripts %}
-<script>
-$(document).ready(function() {
-    $('.pgwSlideshow').pgwSlideshow({
-      transitionEffect : 'fading',
-      maxHeight : 480,
-    }
-    );
-});
-</script>
-<script src="pgwslideshow/pgwslideshow.min.js"></script>
+<script src="/fotorama/fotorama.js"></script>
 {% endblock %}
 {% endblock %}
