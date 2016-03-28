@@ -348,12 +348,34 @@
             </div>
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <i class="fa fa-location-arrow fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                <p><a href="https://www.google.com.mx/maps/place/Industria+y+Servicios+Madereros+Sg+S.A.+de+C.V./@19.6277927,-99.2465669,17z/data=!4m7!1m4!3m3!1s0x85d21e9aa1ba85ff:0x1673df7b52bbf677!2sPel%C3%ADcanos+65,+Lago+de+Guadalupe,+54760+Cuautitl%C3%A1n+Izcalli,+M%C3%A9x.!3b1!3m1!1s0x0000000000000000:0xa767049d3859529a?hl=en">Pelícanos No. 65 Colonia Lago de Guadalupe CP 54760 Cuautitlan Izcalli, Estado de México</a></p><p><div class="google-maps"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3757.9884230214943!2d-99.24656689999999!3d19.627792699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xa767049d3859529a!2sIndustria+y+Servicios+Madereros+Sg+S.A.+de+C.V.!5e0!3m2!1sen!2smx!4v1441246196403" width="350" height="250" frameborder="0" style="border:0" allowfullscreen></iframe></div></p>
+                <p><a href="https://www.google.com.mx/maps/place/Industria+y+Servicios+Madereros+Sg+S.A.+de+C.V./@19.6277927,-99.2465669,17z/data=!4m7!1m4!3m3!1s0x85d21e9aa1ba85ff:0x1673df7b52bbf677!2sPel%C3%ADcanos+65,+Lago+de+Guadalupe,+54760+Cuautitl%C3%A1n+Izcalli,+M%C3%A9x.!3b1!3m1!1s0x0000000000000000:0xa767049d3859529a?hl=en">Pelícanos No. 65 Colonia Lago de Guadalupe CP 54760 Cuautitlan Izcalli, Estado de México</a></p><p><div class="google-maps"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3757.9884230214943!2d-99.24656689999999!3d19.627792699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xa767049d3859529a!2sIndustria+y+Servicios+Madereros+Sg+S.A.+de+C.V.!5e0!3m2!1sen!2smx!4v1441246196403" width="350" height="250" style="border:0" allowfullscreen></iframe></div>
             </div>
         </div>
     </div>
 </section>
 
 
+{% endblock %}
 
+{% block scripts %}
+
+<!-- Custom Theme JavaScript -->
+
+<script>
+    $('.carousel').carousel({
+        interval: 3000
+    });
+
+    if (document.location.pathname == "/") {
+        $('#mainNav').removeClass("affix")
+        }
+
+        $('#mainNav').affix({
+            offset: {
+                top: 490
+            }
+        })
+
+
+</script>
 {% endblock %}

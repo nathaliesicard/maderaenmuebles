@@ -78,7 +78,7 @@ gulp.task('htmlminify', ['revreplace'], function() {
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task('minify', ['cssminify',/* 'jsminify',*/ 'htmlminify', 'imagemin']);
+gulp.task('minify', ['cssminify','jsminify', 'htmlminify', 'imagemin']);
 
 
 gulp.task('deploy', ['minify'], function() {
