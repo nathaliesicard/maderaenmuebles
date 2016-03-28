@@ -29,6 +29,7 @@ var paths = {
    '/cocinas': 'cocinas',
    '/pergolas': 'pergolas',
    '/closets': 'closets',
+  '/oficinas': 'oficinas',
    '/muebles': 'muebles',
    '/nosotros': 'nosotros',
    '/contacto': 'contacto',
