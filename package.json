@@ -11,8 +11,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "better-assert": "^1.0.2",
     "bootstrap": "^3.3.6",
     "fotorama": "^4.6.4",
+    "gulp-imagemin": "^2.4.0",
     "jquery": "^2.2.1",
     "koa": "^1.0.0",
     "koa-bodyparser": "^2.0.1",
@@ -23,7 +25,25 @@
     "nodemailer": "^1.8.0",
     "nodemailer-smtp-transport": "^1.0.3",
     "nunjucks": "^2.0.0",
-    "pgwslideshow": "^2.0.0"
+    "pgwslideshow": "^2.0.0",
+    "rimraf": "^2.5.2"
+  },
+  "devDependencies": {
+    "async": "^1.4.2",
+    "co": "^4.6.0",
+    "gulp": "^3.9.0",
+    "gulp-awspublish": "^3.0.0",
+    "gulp-awspublish-router": "^0.1.1",
+    "gulp-debug": "^2.1.0",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-minify-html": "^1.0.4",
+    "gulp-rev": "^6.0.1",
+    "gulp-rev-replace": "^0.4.2",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.4.0",
+    "request": "^2.69.0",
+    "vinyl": "^1.1.1",
+    "vinyl-fs": "^2.3.1"
   },
   "engines": {
     "node": "4.0.x"
