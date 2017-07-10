@@ -8,9 +8,9 @@ var gulp = require('gulp');
 var rev = require('gulp-rev');
 var revReplace = require('gulp-rev-replace');
 var uglify = require('gulp-uglify');
-var minifyHTML = require('gulp-minify-html');
+var minifyHTML = require('gulp-htmlmin');
 var sourcemaps = require('gulp-sourcemaps');
-var minifyCss = require('gulp-minify-css');
+var minifyCss = require('gulp-clean-css');
 var debug = require('gulp-debug');
 var imagemin = require('gulp-imagemin');
 
@@ -21,67 +21,67 @@ gulp.task('clean', function (cb) {
   rimraf('dist', cb);
 });
 
-gulp.task('copy', ['clean'], function() {
+gulp.task('copy', gulp.series('clean', function() {
   return vfs.src('./public/**', { follow: true })
     .pipe(gulp.dest('dist'));
-});
+}));
 
-gulp.task('imagemin', ['copy'], function() { // writes over the copy..
+gulp.task('imagemin', gulp.series('copy', function() { // writes over the copy..
   return gulp.src(['./public/**/*.jpg', './public/**/*.png'])
     .pipe(imagemin({
       progressive: true
     }))
     .pipe(gulp.dest('dist'));
-});
+}));
 
-gulp.task('crawl', ['clean'], function() {
+gulp.task('crawl', gulp.series(function() {
   return crawler()
     .pipe(gulp.dest('dist'));
-});
+}));
 
-gulp.task('revision', ['crawl', 'copy'], function() {
+gulp.task('revision', gulp.series('copy', 'crawl', function() {
   return gulp.src(['dist/**/*.css', '!dist/**/*.min.css', 'dist/**/*.js', '!dist/**/*.min.js'])
     .pipe(debug({ title: 'revisioning' }))
     .pipe(rev())
     .pipe(gulp.dest('dist'))
     .pipe(rev.manifest())
     .pipe(gulp.dest('dist'));
-});
+}));
 
-gulp.task('revreplace', ['revision'], function() {
+gulp.task('revreplace', gulp.series('revision', function() {
   var manifest = gulp.src("./dist/rev-manifest.json");
 
   return gulp.src('./dist/**/*.html')
     .pipe(revReplace({manifest: manifest}))
     .pipe(gulp.dest('./dist'));
-});
+}));
 
-gulp.task('cssminify', ['revreplace'], function() {
+gulp.task('cssminify', gulp.series('revreplace', function() {
   return vfs.src(['dist/**/*.css', '!dist/**/*.min.css'])
     .pipe(sourcemaps.init())
     .pipe(minifyCss())
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('dist'));
-});
+}));
 
-gulp.task('jsminify', ['revreplace'], function() {
+gulp.task('jsminify', gulp.series('revreplace', function() {
   return vfs.src(['dist/**/*.js', '!dist/**/*.min.js'])
     .pipe(sourcemaps.init())
     .pipe(uglify())
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('dist'));
-});
+}));
 
-gulp.task('htmlminify', ['revreplace'], function() {
+gulp.task('htmlminify', gulp.series('revreplace', function() {
   return gulp.src('dist/*.html')
-    .pipe(minifyHTML())
+    .pipe(minifyHTML({collapseWhitespace: true}))
     .pipe(gulp.dest('dist'));
-});
+}));
 
-gulp.task('minify', ['cssminify','jsminify', 'htmlminify', 'imagemin']);
+gulp.task('minify', gulp.series('cssminify','jsminify', 'htmlminify', 'imagemin'));
 
 
-gulp.task('deploy', ['minify'], function() {
+gulp.task('deploy', gulp.series('minify', function() {
 
   var awsOpts = require('./.aws-options.json');
 
@@ -116,7 +116,7 @@ gulp.task('deploy', ['minify'], function() {
     .pipe(publisher.cache())
     .pipe(awspublish.reporter());
 
-});
+}));
 
 
-gulp.task('default', ['minify']);
+gulp.task('default', gulp.series('minify'));

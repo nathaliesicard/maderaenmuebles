@@ -38,7 +38,7 @@ function makeRequest(path, cb) {
     if (path.endsWith('/'))
       path += 'index';
 
-    if (res.headers['content-type'] == 'text/html; charset=utf-8') {
+    if (res.headers['content-type'] === 'text/html; charset=utf-8') {
       path += '.html';
     }
 
